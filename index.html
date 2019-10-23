@@ -1,184 +1,168 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1671.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <style>
+        body {
+            font-family: Sans-serif;
+            font-size: 11px;
+        }
+
+        .slice {
+            cursor: pointer;
+        }
+
+        .slice .main-arc {
+            stroke: #fff;
+            stroke-width: 1px;
+        }
+
+        .slice .hidden-arc {
+            fill: none;
+        }
+
+        .slice text {
+            pointer-events: none;
+            dominant-baseline: middle;
+            text-anchor: middle;
+        }
+    </style>
+
+    <script src='https://d3js.org/d3.v4.min.js'></script>
 </head>
 <body>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: Sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 11px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.slice {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.slice .main-arc {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>stroke: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>stroke-width: 1px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.slice .hidden-arc {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>fill: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.slice text {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>pointer-events: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>dominant-baseline: middle;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-anchor: middle;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src='https://d3js.org/d3.v4.min.js'&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const width = window.innerWidth,</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height = window.innerHeight,</p>
-<p class="p1"><span class="Apple-converted-space">            </span>maxRadius = (Math.min(width, height) / 2) - 5;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const formatNumber = d3.format(',d');</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const x = d3.scaleLinear()</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.range([0, 2 * Math.PI])</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.clamp(true);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const y = d3.scaleSqrt()</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.range([maxRadius*.1, maxRadius]);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const color = d3.scaleOrdinal(d3.schemeCategory20);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const partition = d3.partition();</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const arc = d3.arc()</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.startAngle(d =&gt; x(d.x0))</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.endAngle(d =&gt; x(d.x1))</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.innerRadius(d =&gt; Math.max(0, y(d.y0)))</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.outerRadius(d =&gt; Math.max(0, y(d.y1)));</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const middleArcLine = d =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const halfPi = Math.PI/2;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const angles = [x(d.x0) - halfPi, x(d.x1) - halfPi];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>const middleAngle = (angles[1] + angles[0]) / 2;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const invertDirection = middleAngle &gt; 0 &amp;&amp; middleAngle &lt; Math.PI; // On lower quadrants write text ccw</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (invertDirection) { angles.reverse(); }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>const path = d3.path();</p>
-<p class="p1"><span class="Apple-converted-space">            </span>path.arc(0, 0, r, angles[0], angles[1], invertDirection);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>return path.toString();</p>
-<p class="p1"><span class="Apple-converted-space">        </span>};</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const textFits = d =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const CHAR_SPACE = 6;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>const deltaAngle = x(d.x1) - x(d.x0);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const perimeter = r * deltaAngle;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>return d.data.name.length * CHAR_SPACE &lt; perimeter;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>};</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const svg = d3.select('body').append('svg')</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.style('width', '100vw')</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.style('height', '100vh')</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.attr('viewBox', `${-width / 2} ${-height / 2} ${width} ${height}`)</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.on('click', () =&gt; focusOn()); // Reset zoom on canvas click</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>d3.json('https://gist.githubusercontent.com/mbostock/4348373/raw/85f18ac90409caa5529b32156aa6e71cf985263f/flare.json', (error, root) =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (error) throw error;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>root = d3.hierarchy(root);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>root.sum(d =&gt; d.size);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>const slice = svg.selectAll('g.slice')</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.data(partition(root).descendants());</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>slice.exit().remove();</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>const newSlice = slice.enter()</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.append('g').attr('class', 'slice')</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.on('click', d =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>d3.event.stopPropagation();</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>focusOn(d);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>newSlice.append('title')</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.text(d =&gt; d.data.name + '\n' + formatNumber(d.value));</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>newSlice.append('path')</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.attr('class', 'main-arc')</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.style('fill', d =&gt; color((d.children ? d : d.parent).data.name))</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.attr('d', arc);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>newSlice.append('path')</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.attr('class', 'hidden-arc')</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.attr('id', (_, i) =&gt; `hiddenArc${i}`)</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.attr('d', middleArcLine);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>const text = newSlice.append('text')</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.attr('display', d =&gt; textFits(d) ? null : 'none');</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>// Add white contour</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text.append('textPath')</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.attr('startOffset','50%')</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.attr('xlink:href', (_, i) =&gt; `#hiddenArc${i}` )</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.text(d =&gt; d.data.name)</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.style('fill', 'none')</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.style('stroke', '#fff')</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.style('stroke-width', 5)</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.style('stroke-linejoin', 'round');</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>text.append('textPath')</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.attr('startOffset','50%')</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.attr('xlink:href', (_, i) =&gt; `#hiddenArc${i}` )</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.text(d =&gt; d.data.name);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>function focusOn(d = { x0: 0, x1: 1, y0: 0, y1: 1 }) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>// Reset to top-level if no data point specified</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>const transition = svg.transition()</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.duration(750)</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.tween('scale', () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>const xd = d3.interpolate(x.domain(), [d.x0, d.x1]),</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>yd = d3.interpolate(y.domain(), [d.y0, 1]);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>return t =&gt; { x.domain(xd(t)); y.domain(yd(t)); };</p>
-<p class="p1"><span class="Apple-converted-space">                </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition.selectAll('path.main-arc')</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.attrTween('d', d =&gt; () =&gt; arc(d));</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition.selectAll('path.hidden-arc')</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.attrTween('d', d =&gt; () =&gt; middleArcLine(d));</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition.selectAll('text')</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.attrTween('display', d =&gt; () =&gt; textFits(d) ? null : 'none');</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>moveStackToFront(d);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>//</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>function moveStackToFront(elD) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>svg.selectAll('.slice').filter(d =&gt; d === elD)</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>.each(function(d) {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>this.parentNode.appendChild(this);</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>if (d.parent) { moveStackToFront(d.parent); }</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>})</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
+    <script>
+        const width = window.innerWidth,
+            height = window.innerHeight,
+            maxRadius = (Math.min(width, height) / 2) - 5;
+
+        const formatNumber = d3.format(',d');
+
+        const x = d3.scaleLinear()
+            .range([0, 2 * Math.PI])
+            .clamp(true);
+
+        const y = d3.scaleSqrt()
+            .range([maxRadius*.1, maxRadius]);
+
+        const color = d3.scaleOrdinal(d3.schemeCategory20);
+
+        const partition = d3.partition();
+
+        const arc = d3.arc()
+            .startAngle(d => x(d.x0))
+            .endAngle(d => x(d.x1))
+            .innerRadius(d => Math.max(0, y(d.y0)))
+            .outerRadius(d => Math.max(0, y(d.y1)));
+
+        const middleArcLine = d => {
+            const halfPi = Math.PI/2;
+            const angles = [x(d.x0) - halfPi, x(d.x1) - halfPi];
+            const r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
+
+            const middleAngle = (angles[1] + angles[0]) / 2;
+            const invertDirection = middleAngle > 0 && middleAngle < Math.PI; // On lower quadrants write text ccw
+            if (invertDirection) { angles.reverse(); }
+
+            const path = d3.path();
+            path.arc(0, 0, r, angles[0], angles[1], invertDirection);
+            return path.toString();
+        };
+
+        const textFits = d => {
+            const CHAR_SPACE = 6;
+
+            const deltaAngle = x(d.x1) - x(d.x0);
+            const r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
+            const perimeter = r * deltaAngle;
+
+            return d.data.name.length * CHAR_SPACE < perimeter;
+        };
+
+        const svg = d3.select('body').append('svg')
+            .style('width', '100vw')
+            .style('height', '100vh')
+            .attr('viewBox', `${-width / 2} ${-height / 2} ${width} ${height}`)
+            .on('click', () => focusOn()); // Reset zoom on canvas click
+
+        d3.json('https://raw.githubusercontent.com/giesytest/giesytest.github.io/master/taxon_other.json', (error, root) => {
+            if (error) throw error;
+
+            root = d3.hierarchy(root);
+            root.sum(d => d.size);
+
+            const slice = svg.selectAll('g.slice')
+                .data(partition(root).descendants());
+
+            slice.exit().remove();
+
+            const newSlice = slice.enter()
+                .append('g').attr('class', 'slice')
+                .on('click', d => {
+                    d3.event.stopPropagation();
+                    focusOn(d);
+                });
+
+            newSlice.append('title')
+                .text(d => d.data.name + '\n' + formatNumber(d.value));
+
+            newSlice.append('path')
+                .attr('class', 'main-arc')
+                .style('fill', d => color((d.children ? d : d.parent).data.name))
+                .attr('d', arc);
+
+            newSlice.append('path')
+                .attr('class', 'hidden-arc')
+                .attr('id', (_, i) => `hiddenArc${i}`)
+                .attr('d', middleArcLine);
+
+            const text = newSlice.append('text')
+                .attr('display', d => textFits(d) ? null : 'none');
+
+            // Add white contour
+            text.append('textPath')
+                .attr('startOffset','50%')
+                .attr('xlink:href', (_, i) => `#hiddenArc${i}` )
+                .text(d => d.data.name)
+                .style('fill', 'none')
+                .style('stroke', '#fff')
+                .style('stroke-width', 5)
+                .style('stroke-linejoin', 'round');
+
+            text.append('textPath')
+                .attr('startOffset','50%')
+                .attr('xlink:href', (_, i) => `#hiddenArc${i}` )
+                .text(d => d.data.name);
+        });
+
+        function focusOn(d = { x0: 0, x1: 1, y0: 0, y1: 1 }) {
+            // Reset to top-level if no data point specified
+
+            const transition = svg.transition()
+                .duration(750)
+                .tween('scale', () => {
+                    const xd = d3.interpolate(x.domain(), [d.x0, d.x1]),
+                        yd = d3.interpolate(y.domain(), [d.y0, 1]);
+                    return t => { x.domain(xd(t)); y.domain(yd(t)); };
+                });
+
+            transition.selectAll('path.main-arc')
+                .attrTween('d', d => () => arc(d));
+
+            transition.selectAll('path.hidden-arc')
+                .attrTween('d', d => () => middleArcLine(d));
+
+            transition.selectAll('text')
+                .attrTween('display', d => () => textFits(d) ? null : 'none');
+
+            moveStackToFront(d);
+
+            //
+
+            function moveStackToFront(elD) {
+                svg.selectAll('.slice').filter(d => d === elD)
+                    .each(function(d) {
+                        this.parentNode.appendChild(this);
+                        if (d.parent) { moveStackToFront(d.parent); }
+                    })
+            }
+        }
+    </script>
 </body>
-</html>
