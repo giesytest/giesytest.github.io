@@ -1,28 +1,28 @@
 {
 
- "name": "flare",
+ "name": "GWCM",
 
  "children": [
 
   {
 
-   "name": "analytics",
+   "name": "Facilities & Construction",
 
    "children": [
 
     {
 
-     "name": "cluster",
+     "name": "Construction Related Materials",
 
      "children": [
 
-      {"name": "AgglomerativeCluster", "size": 3938},
+      {"name": "BIC", "size": 3938},
 
-      {"name": "CommunityStructure", "size": 3812},
+      {"name": "Tier 2", "size": 3812},
 
-      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "Tier 1", "size": 6714},
 
-      {"name": "MergeEdge", "size": 743}
+      {"name": "Tier 0", "size": 743}
 
      ]
 
@@ -30,17 +30,17 @@
 
     {
 
-     "name": "graph",
+     "name": "Construction Related Services",
 
      "children": [
 
-      {"name": "BetweennessCentrality", "size": 3534},
+      {"name": "BIC", "size": 3534},
 
-      {"name": "LinkDistance", "size": 5731},
+      {"name": "Tier 2", "size": 5731},
 
-      {"name": "MaxFlowMinCut", "size": 7840},
+      {"name": "Tier 1", "size": 7840},
 
-      {"name": "ShortestPaths", "size": 5914},
+      {"name": "Tier 0", "size": 5914},
 
       {"name": "SpanningTree", "size": 3416}
 
@@ -50,14 +50,63 @@
 
     {
 
-     "name": "optimization",
+     "name": "Facilities Purchase & Lease",
 
      "children": [
 
-      {"name": "AspectRatioBanker", "size": 7074}
+      {"name": "BIC", "size": 3534},
+
+      {"name": "Tier 2", "size": 5731},
+
+      {"name": "Tier 1", "size": 7840},
+
+      {"name": "Tier 0", "size": 5914},
+
+      {"name": "SpanningTree", "size": 3416}
 
      ]
 
+    },
+ {
+
+     "name": "Facility Related Materials",
+
+     "children": [
+
+      {"name": "BIC", "size": 3534},
+
+      {"name": "Tier 2", "size": 5731},
+
+      {"name": "Tier 1", "size": 7840},
+
+      {"name": "Tier 0", "size": 5914},
+
+      {"name": "SpanningTree", "size": 3416}
+
+     ]
+
+    },       
+       
+ {
+
+     "name": "Facility Related Services",
+
+     "children": [
+
+      {"name": "BIC", "size": 3534},
+
+      {"name": "Tier 2", "size": 5731},
+
+      {"name": "Tier 1", "size": 7840},
+
+      {"name": "Tier 0", "size": 5914},
+
+      {"name": "SpanningTree", "size": 3416}
+
+     ]
+
+    },       
+       
     }
 
    ]
