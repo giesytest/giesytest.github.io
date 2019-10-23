@@ -16,6 +16,102 @@
 
      "children": [
 
+      {"name": "BIC", "size": 5912633},
+
+      {"name": "Tier 2", "size": 641172827},
+
+      {"name": "Tier 1", "size": 703826669},
+
+      {"name": "Tier 0", "size": 590906063}
+
+     ]
+
+    },
+
+    {
+
+     "name": "Construction Related Services",
+
+     "children": [
+
+      {"name": "BIC", "size": 33378579},
+
+      {"name": "Tier 2", "size": 2511041018},
+
+      {"name": "Tier 1", "size": 361894404},
+
+      {"name": "Tier 0", "size": 18370558105}
+
+     ]
+
+    },
+
+    {
+
+     "name": "Facilities Purchase & Lease",
+
+     "children": [
+
+      {"name": "BIC", "size": 4478642},
+
+      {"name": "Tier 2", "size": 9945231},
+
+      {"name": "Tier 1", "size": 99708},
+
+      {"name": "Tier 0", "size": 535387864}
+
+     ]
+
+    },
+ {
+
+     "name": "Facility Related Materials",
+
+     "children": [
+
+      {"name": "BIC", "size": 14650457},
+
+      {"name": "Tier 2", "size": 67222465},
+
+      {"name": "Tier 1", "size": 137501363},
+
+      {"name": "Tier 0", "size": 457590915}
+
+     ]
+
+    },       
+       
+ {
+
+     "name": "Facility Related Services",
+
+     "children": [
+
+      {"name": "BIC", "size": 87848500},
+
+      {"name": "Tier 2", "size": 4212313830},
+
+      {"name": "Tier 1", "size": 18895374021},
+
+      {"name": "Tier 0", "size": 31072135727}
+     ]
+
+    }       
+       
+    ]
+  },
+  {
+
+   "name": "Facilities & Construction",
+
+   "children": [
+
+    {
+
+     "name": "Construction Related Materials",
+
+     "children": [
+
       {"name": "BIC", "size": 3938},
 
       {"name": "Tier 2", "size": 3812},
@@ -100,7 +196,6 @@
        
     ]
   },
-
   {
 
    "name": "animate",
