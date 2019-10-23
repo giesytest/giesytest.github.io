@@ -40,9 +40,7 @@
 
       {"name": "Tier 1", "size": 7840},
 
-      {"name": "Tier 0", "size": 5914},
-
-      {"name": "SpanningTree", "size": 3416}
+      {"name": "Tier 0", "size": 5914}
 
      ]
 
@@ -60,9 +58,7 @@
 
       {"name": "Tier 1", "size": 7840},
 
-      {"name": "Tier 0", "size": 5914},
-
-      {"name": "SpanningTree", "size": 3416}
+      {"name": "Tier 0", "size": 5914}
 
      ]
 
@@ -79,9 +75,7 @@
 
       {"name": "Tier 1", "size": 7840},
 
-      {"name": "Tier 0", "size": 5914},
-
-      {"name": "SpanningTree", "size": 3416}
+      {"name": "Tier 0", "size": 5914}
 
      ]
 
@@ -99,10 +93,7 @@
 
       {"name": "Tier 1", "size": 7840},
 
-      {"name": "Tier 0", "size": 5914},
-
-      {"name": "SpanningTree", "size": 3416}
-
+      {"name": "Tier 0", "size": 5914}
      ]
 
     }       
