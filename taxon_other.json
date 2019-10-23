@@ -161,7 +161,7 @@
     },
  {
 
-     "name": "Strategu, Policies, and Operations",
+     "name": "Strategy, Policies, and Operations",
 
      "children": [
 
@@ -205,6 +205,131 @@
       {"name": "Tier 1", "size": 528135868},
 
       {"name": "Tier 0", "size": 2707295765}
+     ]
+
+    }       
+    ]
+  },
+  {
+
+   "name": "Industrial Products and Services",
+
+   "children": [
+
+    {
+
+     "name": "Basic Materials",
+
+     "children": [
+
+      {"name": "BIC", "size": 5888},
+
+      {"name": "Tier 2", "size": 56896808},
+
+      {"name": "Tier 1", "size": 1167256522},
+
+      {"name": "Tier 0", "size": 269368127}
+
+     ]
+
+    },
+
+    {
+
+     "name": "Safety Equipment",
+
+     "children": [
+
+      {"name": "BIC", "size": 295224},
+
+      {"name": "Tier 2", "size": 64729474},
+
+      {"name": "Tier 1", "size": 172512376},
+
+      {"name": "Tier 0", "size": 220149906}
+
+     ]
+
+    },
+
+    {
+
+     "name": "Hardware & Tools",
+
+     "children": [
+
+      {"name": "BIC", "size": 103441124},
+
+      {"name": "Tier 2", "size": 304598903},
+
+      {"name": "Tier 1", "size": 501510792},
+
+      {"name": "Tier 0", "size": 504296113}
+
+     ]
+
+    },
+ {
+
+     "name": "Installation and Maintenance",
+
+     "children": [
+
+      {"name": "BIC", "size": 14311607},
+
+      {"name": "Tier 2", "size": 82831796},
+
+      {"name": "Tier 1", "size": 60747777},
+
+      {"name": "Tier 0", "size": 748526828}
+
+     ]
+
+    },       
+       
+ {
+
+     "name": "Machinery and Components",
+
+     "children": [
+
+      {"name": "BIC", "size": 8195423},
+
+      {"name": "Tier 2", "size": 62703797},
+
+      {"name": "Tier 1", "size": 889797755},
+
+      {"name": "Tier 0", "size": 2077010584}
+     ]
+
+    },       
+{
+     "name": "Oils and Lubricants",
+
+     "children": [
+
+      {"name": "BIC", "size": 5427},
+
+      {"name": "Tier 2", "size": 1593913},
+
+      {"name": "Tier 1", "size": 82333355},
+
+      {"name": "Tier 0", "size": 17777999}
+     ]
+
+    },
+{
+     "name": "Test & Measurement Supplies",
+
+     "children": [
+
+      {"name": "BIC", "size": 5176151},
+
+      {"name": "Tier 2", "size": 449680745},
+
+      {"name": "Tier 1", "size": 433434710},
+
+      {"name": "Tier 0", "size": 1490076048}
      ]
 
     }       
