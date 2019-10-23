@@ -337,6 +337,116 @@
   },
   {
 
+   "name": "IT",
+
+   "children": [
+
+    {
+
+     "name": "IT Consulting",
+
+     "children": [
+
+      {"name": "BIC", "size": 564758227},
+
+      {"name": "Tier 2", "size": 326312407},
+
+      {"name": "Tier 1", "size": 98443151},
+
+      {"name": "Tier 0", "size": 396194116}
+
+     ]
+
+    },
+
+    {
+
+     "name": "IT Hardware",
+
+     "children": [
+
+      {"name": "BIC", "size": 2794780608},
+
+      {"name": "Tier 2", "size": 1368341597},
+
+      {"name": "Tier 1", "size": 997735220},
+
+      {"name": "Tier 0", "size": 5056937751}
+
+     ]
+
+    },
+
+    {
+
+     "name": "IT Outsourcing",
+
+     "children": [
+
+      {"name": "BIC", "size": 10082917143},
+
+      {"name": "Tier 2", "size": 6736244996},
+
+      {"name": "Tier 1", "size": 5523538789},
+
+      {"name": "Tier 0", "size": 12464244634}
+
+     ]
+
+    },
+ {
+
+     "name": "IT Security",
+
+     "children": [
+
+      {"name": "BIC", "size": 71290055},
+
+      {"name": "Tier 2", "size": 26739877},
+
+      {"name": "Tier 1", "size": 62968863},
+
+      {"name": "Tier 0", "size": 538393198}
+
+     ]
+
+    },       
+       
+ {
+
+     "name": "IT Software",
+
+     "children": [
+
+      {"name": "BIC", "size": 4547056804},
+
+      {"name": "Tier 2", "size": 733559400},
+
+      {"name": "Tier 1", "size": 322618802},
+
+      {"name": "Tier 0", "size": 2048917038}
+     ]
+
+    },       
+{
+     "name": "Telecommunications",
+
+     "children": [
+
+      {"name": "BIC", "size": 815738842},
+
+      {"name": "Tier 2", "size": 305416668},
+
+      {"name": "Tier 1", "size": 434501057},
+
+      {"name": "Tier 0", "size": 1315324274}
+     ]
+
+    }      
+    ]
+  },
+  {
+
    "name": "animate",
 
    "children": [
