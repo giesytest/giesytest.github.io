@@ -102,23 +102,23 @@
   },
   {
 
-   "name": "Facilities & Construction",
+   "name": "Human Capital",
 
    "children": [
 
     {
 
-     "name": "Construction Related Materials",
+     "name": "Compensation and Benefits",
 
      "children": [
 
-      {"name": "BIC", "size": 3938},
+      {"name": "BIC", "size": 0},
 
-      {"name": "Tier 2", "size": 3812},
+      {"name": "Tier 2", "size": 9863},
 
-      {"name": "Tier 1", "size": 6714},
+      {"name": "Tier 1", "size": 0},
 
-      {"name": "Tier 0", "size": 743}
+      {"name": "Tier 0", "size": 1480}
 
      ]
 
@@ -126,17 +126,17 @@
 
     {
 
-     "name": "Construction Related Services",
+     "name": "Employee Relations",
 
      "children": [
 
-      {"name": "BIC", "size": 3534},
+      {"name": "BIC", "size": 0},
 
-      {"name": "Tier 2", "size": 5731},
+      {"name": "Tier 2", "size": 24288241},
 
-      {"name": "Tier 1", "size": 7840},
+      {"name": "Tier 1", "size": 0},
 
-      {"name": "Tier 0", "size": 5914}
+      {"name": "Tier 0", "size": 4457908}
 
      ]
 
@@ -144,34 +144,34 @@
 
     {
 
-     "name": "Facilities Purchase & Lease",
+     "name": "Human Capital Evaluation",
 
      "children": [
 
-      {"name": "BIC", "size": 3534},
+      {"name": "BIC", "size": 0},
 
-      {"name": "Tier 2", "size": 5731},
+      {"name": "Tier 2", "size": 38558138},
 
-      {"name": "Tier 1", "size": 7840},
+      {"name": "Tier 1", "size": 0},
 
-      {"name": "Tier 0", "size": 5914}
+      {"name": "Tier 0", "size": 18150526}
 
      ]
 
     },
  {
 
-     "name": "Facility Related Materials",
+     "name": "Strategu, Policies, and Operations",
 
      "children": [
 
-      {"name": "BIC", "size": 3534},
+      {"name": "BIC", "size": 48546638},
 
-      {"name": "Tier 2", "size": 5731},
+      {"name": "Tier 2", "size": 57349080},
 
-      {"name": "Tier 1", "size": 7840},
+      {"name": "Tier 1", "size": 8545267},
 
-      {"name": "Tier 0", "size": 5914}
+      {"name": "Tier 0", "size": 184839548}
 
      ]
 
@@ -179,21 +179,35 @@
        
  {
 
-     "name": "Facility Related Services",
+     "name": "Talent Acquisition",
 
      "children": [
 
-      {"name": "BIC", "size": 3534},
+      {"name": "BIC", "size": 3944915},
 
-      {"name": "Tier 2", "size": 5731},
+      {"name": "Tier 2", "size": 42479179},
 
-      {"name": "Tier 1", "size": 7840},
+      {"name": "Tier 1", "size": 26890},
 
-      {"name": "Tier 0", "size": 5914}
+      {"name": "Tier 0", "size": 35070080}
+     ]
+
+    },       
+{
+     "name": "Talent Development",
+
+     "children": [
+
+      {"name": "BIC", "size": 458558554},
+
+      {"name": "Tier 2", "size": 212127953},
+
+      {"name": "Tier 1", "size": 528135868},
+
+      {"name": "Tier 0", "size": 2707295765}
      ]
 
     }       
-       
     ]
   },
   {
