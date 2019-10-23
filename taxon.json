@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1671.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>"name": "flare",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"name": "analytics",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"name": "cluster",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "AgglomerativeCluster", "size": 3938},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "CommunityStructure", "size": 3812},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "HierarchicalCluster", "size": 6714},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "MergeEdge", "size": 743}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"name": "graph",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "BetweennessCentrality", "size": 3534},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "LinkDistance", "size": 5731},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "MaxFlowMinCut", "size": 7840},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "ShortestPaths", "size": 5914},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "SpanningTree", "size": 3416}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"name": "optimization",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "AspectRatioBanker", "size": 7074}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"name": "animate",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Easing", "size": 17010},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "FunctionSequence", "size": 5842},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"name": "interpolate",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "ArrayInterpolator", "size": 1983},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "ColorInterpolator", "size": 2047},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "DateInterpolator", "size": 1375},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "Interpolator", "size": 8746},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "MatrixInterpolator", "size": 2202},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "NumberInterpolator", "size": 1382},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "ObjectInterpolator", "size": 1629},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "PointInterpolator", "size": 1675},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "RectangleInterpolator", "size": 2042}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "ISchedulable", "size": 1041},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Parallel", "size": 5176},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Pause", "size": 449},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Scheduler", "size": 5593},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Sequence", "size": 5534},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Transition", "size": 9201},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Transitioner", "size": 19975},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "TransitionEvent", "size": 1116},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Tween", "size": 6006}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"name": "data",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"name": "converters",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "Converters", "size": 721},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "DelimitedTextConverter", "size": 4294},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "GraphMLConverter", "size": 9800},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "IDataConverter", "size": 1314},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "JSONConverter", "size": 2220}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "DataField", "size": 1759},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "DataSchema", "size": 2165},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "DataSet", "size": 586},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "DataSource", "size": 3331},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "DataTable", "size": 772},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "DataUtil", "size": 3322}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"name": "display",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "DirtySprite", "size": 8833},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "LineSprite", "size": 1732},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "RectSprite", "size": 3623},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "TextSprite", "size": 10066}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"name": "flex",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "FlareVis", "size": 4116}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"name": "physics",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "DragForce", "size": 1082},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "GravityForce", "size": 1336},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "IForce", "size": 319},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "NBodyForce", "size": 10498},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Particle", "size": 2822},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Simulation", "size": 9983},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Spring", "size": 2213},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "SpringForce", "size": 1681}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"name": "query",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "AggregateExpression", "size": 1616},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "And", "size": 1027},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Arithmetic", "size": 3891},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Average", "size": 891},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "BinaryExpression", "size": 2893},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Comparison", "size": 5103},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "CompositeExpression", "size": 3677},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Count", "size": 781},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "DateUtil", "size": 4141},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Distinct", "size": 933},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Expression", "size": 5130},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "ExpressionIterator", "size": 3617},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Fn", "size": 3240},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "If", "size": 2732},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "IsA", "size": 2039},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Literal", "size": 1214},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Match", "size": 3748},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Maximum", "size": 843},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"name": "methods",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "add", "size": 593},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "and", "size": 330},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "average", "size": 287},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "count", "size": 277},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "distinct", "size": 292},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "div", "size": 595},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "eq", "size": 594},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "fn", "size": 460},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "gt", "size": 603},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "gte", "size": 625},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "iff", "size": 748},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "isa", "size": 461},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "lt", "size": 597},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "lte", "size": 619},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "max", "size": 283},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "min", "size": 283},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "mod", "size": 591},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "mul", "size": 603},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "neq", "size": 599},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "not", "size": 386},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "or", "size": 323},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "orderby", "size": 307},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "range", "size": 772},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "select", "size": 296},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "stddev", "size": 363},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "sub", "size": 600},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "sum", "size": 280},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "update", "size": 307},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "variance", "size": 335},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "where", "size": 299},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "xor", "size": 354},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "_", "size": 264}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Minimum", "size": 843},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Not", "size": 1554},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Or", "size": 970},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Query", "size": 13896},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Range", "size": 1594},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "StringUtil", "size": 4130},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Sum", "size": 791},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Variable", "size": 1124},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Variance", "size": 1876},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Xor", "size": 1101}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"name": "scale",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "IScaleMap", "size": 2105},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "LinearScale", "size": 1316},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "LogScale", "size": 3151},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "OrdinalScale", "size": 3770},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "QuantileScale", "size": 2435},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "QuantitativeScale", "size": 4839},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "RootScale", "size": 1756},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Scale", "size": 4268},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "ScaleType", "size": 1821},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "TimeScale", "size": 5833}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"name": "util",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Arrays", "size": 8258},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Colors", "size": 10001},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Dates", "size": 8217},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Displays", "size": 12555},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Filter", "size": 2324},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Geometry", "size": 10993},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"name": "heap",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "FibonacciHeap", "size": 9354},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "HeapNode", "size": 1233}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "IEvaluable", "size": 335},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "IPredicate", "size": 383},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "IValueProxy", "size": 874},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"name": "math",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "DenseMatrix", "size": 3165},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "IMatrix", "size": 2815},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "SparseMatrix", "size": 3366}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Maths", "size": 17705},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Orientation", "size": 1486},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"name": "palette",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "ColorPalette", "size": 6367},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "Palette", "size": 1229},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "ShapePalette", "size": 2059},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "SizePalette", "size": 2291}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Property", "size": 5559},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Shapes", "size": 19118},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Sort", "size": 6887},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Stats", "size": 6557},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Strings", "size": 22026}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"name": "vis",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"name": "axis",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "Axes", "size": 1302},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "Axis", "size": 24593},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "AxisGridLine", "size": 652},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "AxisLabel", "size": 636},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "CartesianAxes", "size": 6703}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"name": "controls",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "AnchorControl", "size": 2138},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "ClickControl", "size": 3824},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "Control", "size": 1353},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "ControlList", "size": 4665},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "DragControl", "size": 2649},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "ExpandControl", "size": 2832},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "HoverControl", "size": 4896},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "IControl", "size": 763},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "PanZoomControl", "size": 5222},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "SelectionControl", "size": 7862},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "TooltipControl", "size": 8435}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"name": "data",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "Data", "size": 20544},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "DataList", "size": 19788},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "DataSprite", "size": 10349},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "EdgeSprite", "size": 3301},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "NodeSprite", "size": 19382},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>"name": "render",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "ArrowType", "size": 698},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "EdgeRenderer", "size": 5569},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "IRenderer", "size": 353},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "ShapeRenderer", "size": 2247}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "ScaleBinding", "size": 11275},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "Tree", "size": 7147},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "TreeBuilder", "size": 9930}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"name": "events",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "DataEvent", "size": 2313},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "SelectionEvent", "size": 1880},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "TooltipEvent", "size": 1701},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "VisualizationEvent", "size": 1117}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"name": "legend",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "Legend", "size": 20859},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "LegendItem", "size": 4614},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "LegendRange", "size": 10530}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"name": "operator",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>"name": "distortion",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "BifocalDistortion", "size": 4461},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "Distortion", "size": 6314},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "FisheyeDistortion", "size": 3444}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>"name": "encoder",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "ColorEncoder", "size": 3179},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "Encoder", "size": 4060},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "PropertyEncoder", "size": 4138},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "ShapeEncoder", "size": 1690},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "SizeEncoder", "size": 1830}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>"name": "filter",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "FisheyeTreeFilter", "size": 5219},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "GraphDistanceFilter", "size": 3165},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "VisibilityFilter", "size": 3509}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "IOperator", "size": 1286},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>"name": "label",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "Labeler", "size": 9956},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "RadialLabeler", "size": 3899},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "StackedAreaLabeler", "size": 3202}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>"name": "layout",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>"children": [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "AxisLayout", "size": 6725},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "BundledEdgeRouter", "size": 3727},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "CircleLayout", "size": 9317},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "CirclePackingLayout", "size": 12003},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "DendrogramLayout", "size": 4853},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "ForceDirectedLayout", "size": 8411},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "IcicleTreeLayout", "size": 4864},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "IndentedTreeLayout", "size": 3174},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "Layout", "size": 7881},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "NodeLinkTreeLayout", "size": 12870},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "PieLayout", "size": 2728},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "RadialTreeLayout", "size": 12348},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "RandomLayout", "size": 870},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "StackedAreaLayout", "size": 9121},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{"name": "TreeMapLayout", "size": 9191}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "Operator", "size": 2490},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "OperatorList", "size": 5248},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "OperatorSequence", "size": 4190},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "OperatorSwitch", "size": 2581},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{"name": "SortOperator", "size": 2023}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{"name": "Visualization", "size": 16540}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>]</span></p>
+<p class="p1"><span class="s1">}</span></p>
+</body>
+</html>
